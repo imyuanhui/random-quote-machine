@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-fluid {
+    max-width: 80%;
+    background-color: #30660f; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(14, 58, 26, 0.1); /* Shadow effect */
+    padding: 20px;
+    color:#fff
+}
+
+#quote-box {
+    max-width: 80%; /* Limiting the width of the quote box */
+    margin: 0 auto; /* Centering the quote box horizontally */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#text-container, #author-container {
+    padding: 10px; /* Adding padding to text and author containers */
+}
+
+#new-quote {
+    margin-top: 20px; /* Adding space between the quote and the button */
+    background-color: #b8cc1c; /* Yellow button color */
+    border-color: #b8cc1c; /* Matching border color */
+}
+
+.bi-twitter-x {
+    color: #b8cc1c; /* Yellow Twitter icon color */
+}
+
+#twitterURL-container {
+    margin-top: 3px;
+}
+
+#new-quote:hover {
+    animation: shake 0.5s; /* Apply shake animation on hover */
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+#tweet-quote:hover .bi-twitter-x {
+    color: #000;
+}
